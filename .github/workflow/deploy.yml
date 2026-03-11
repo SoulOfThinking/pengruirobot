@@ -1,0 +1,54 @@
+name: Deploy Pengrui Robot Site to GitHub Pages
+
+on:
+  # 当 push 代码到 main 分支时触发自动部署
+  push:
+    branches: ['main'] # 如果你的主分支叫 master，请改成 'master'
+
+# 设置 GitHub 权限，允许 Actions 自动写入 Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 确保每次只有一个部署在运行
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  # 第一阶段：安装依赖并打包 (Build)
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # 设置 Node 版本，通常 18 或 20 都可以
+
+      - name: Install dependencies
+        run: npm install # 如果你平时用 yarn 或 pnpm，请替换为 yarn install 或 pnpm install
+
+      - name: Build project
+        run: npm run build # 同样，根据你的包管理器替换为 yarn build 或 pnpm build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist' # Vue 默认打包输出的文件夹名是 dist
+
+  # 第二阶段：将打包好的文件部署到 Pages (Deploy)
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
