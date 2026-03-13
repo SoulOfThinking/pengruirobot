@@ -1,520 +1,500 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+
+  <meta name="title" content="Human-Face Robot Lab | 人面机器人实验室">
+  <meta name="description" content="人面机器人实验室主页，展示实验室目标、四代机器人演进、核心能力、Demo 视频、应用场景与代表性成果。">
+  <meta name="keywords" content="human-face robot, human-robot interaction, social robotics, expression robot, lab homepage, 人面机器人, 人机交互, 机器人实验室">
+  <meta name="author" content="Human-Face Robot Lab">
   <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
+  <meta name="language" content="Chinese">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Human-Face Robot Lab">
+  <meta property="og:title" content="Human-Face Robot Lab | 人面机器人实验室">
+  <meta property="og:description" content="聚焦拟人化面部表达、语音交互与智能服务的人面机器人实验室展示页。">
+  <meta property="og:url" content="https://soulofthinking.github.io/pengruirobot/"> 
   <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="og:image:alt" content="Human-Face Robot Lab Preview">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
+  <meta name="twitter:site" content="@YOUR_LAB_HANDLE">
+  <meta name="twitter:creator" content="@YOUR_LAB_HANDLE">
+  <meta name="twitter:title" content="Human-Face Robot Lab | 人面机器人实验室">
+  <meta name="twitter:description" content="展示实验室使命、四代人面机器人、Demo 视频、应用场景与成果。">
   <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
 
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
   <meta name="msapplication-TileColor" content="#2563eb">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://ajax.googleapis.com">
   <link rel="preconnect" href="https://documentcloud.adobe.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
+  <title>Human-Face Robot Lab | 人面机器人实验室</title>
 
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
+
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
+
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
+
   <noscript>
     <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="static/css/bulma-slider.min.css">
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
-  
-  <!-- Fonts - Optimized loading -->
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
+
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
-    "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
-    ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "@type": "ResearchOrganization",
+    "name": "Human-Face Robot Lab",
+    "alternateName": "人面机器人实验室",
+    "url": "https://soulofthinking.github.io/pengruirobot/",
     "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "description": "A lab homepage for humanoid face robots, focusing on expressive faces, multimodal interaction, and intelligent service scenarios.",
     "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
+      "https://github.com/YOUR_LAB",
+      "https://www.youtube.com/@YOUR_CHANNEL"
     ]
   }
   </script>
 </head>
 <body>
 
-
-  <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
   <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
+    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View Lab Resources">
       <i class="fas fa-flask"></i>
-      More Works
+      Lab Resources
       <i class="fas fa-chevron-down dropdown-arrow"></i>
     </button>
     <div class="more-works-dropdown" id="moreWorksDropdown">
       <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
+        <h4>More from the Lab</h4>
         <button class="close-btn" onclick="toggleMoreWorks()">
           <i class="fas fa-times"></i>
         </button>
       </div>
       <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
+        <a href="#robots" class="work-item">
           <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
+            <h5>四代机器人演进</h5>
+            <p>从原型验证到系统化应用，快速浏览四个版本的人面机器人。</p>
+            <span class="work-venue">Robot Generations</span>
           </div>
-          <i class="fas fa-external-link-alt"></i>
+          <i class="fas fa-arrow-right"></i>
         </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
+        <a href="#demos" class="work-item">
           <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
+            <h5>Demo 视频合集</h5>
+            <p>查看表情控制、语音交互和真实场景演示视频。</p>
+            <span class="work-venue">Video Demos</span>
           </div>
-          <i class="fas fa-external-link-alt"></i>
+          <i class="fas fa-arrow-right"></i>
         </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
+        <a href="#publications" class="work-item">
           <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
+            <h5>代表成果与合作方向</h5>
+            <p>集中展示论文、项目、开源代码与合作联系方式。</p>
+            <span class="work-venue">Outputs & Contact</span>
           </div>
-          <i class="fas fa-external-link-alt"></i>
+          <i class="fas fa-arrow-right"></i>
         </a>
       </div>
     </div>
   </div>
 
   <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+    <section class="hero publication-header">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <p class="hero-kicker">Humanoid Face Robot Lab</p>
+              <h1 class="title is-1 publication-title">人面机器人实验室</h1>
+              <p class="hero-summary">
+                面向情感交互、拟人表达与智能服务场景，打造具有自然面部表情、语音交互和系统集成能力的人面机器人平台。
+              </p>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><a href="#about">实验室目标</a></span>
+                <span class="author-block"><a href="#robots">四代机器人</a></span>
+                <span class="author-block"><a href="#demos">Demo 视频</a></span>
+                <span class="author-block"><a href="#publications">成果与合作</a></span>
+              </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">YOUR UNIVERSITY / YOUR SCHOOL / YOUR LAB</span>
+              </div>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a href="#about" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><i class="fas fa-bullseye"></i></span>
+                      <span>About Lab</span>
                     </a>
                   </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                    <a href="#robots" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><i class="fas fa-robot"></i></span>
+                      <span>Robot Generations</span>
+                    </a>
                   </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                  <span class="link-block">
+                    <a href="#demos" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><i class="fas fa-video"></i></span>
+                      <span>Demo Videos</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR_LAB" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><i class="fab fa-github"></i></span>
+                      <span>GitHub</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <video poster="" id="lab-teaser" autoplay controls muted loop height="100%" preload="metadata">
+            <source src="static/videos/banner_video.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered teaser-copy">
+            建议在这里放置实验室总览视频：可以混剪四代人面机器人的表情能力、语音交互、实验环境与典型应用场景，帮助访问者在 30 秒内快速理解你们的研究特色。
+          </h2>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+    </section>
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <section class="section hero is-light" id="about">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">About the Lab</h2>
+            <div class="content has-text-justified">
+              <p>
+                人面机器人实验室致力于构建兼具拟人化外观、自然面部表情和多模态交互能力的智能机器人平台。我们的目标并不只是“做出一个能动的机器人头部”，而是让机器人能够在教育、接待、科普、陪伴与服务等真实场景中，以更自然、更可信的方式与人交流。
+              </p>
+              <p>
+                这个页面建议作为实验室的对外展示首页：第一部分说明实验室的研究目标与技术方向，第二部分突出四代机器人平台的迭代关系，第三部分集中展示最有说服力的 demo 视频，最后用成果、论文与联系方式收束，形成一条清晰完整的叙事链路。
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
+    </section>
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
+    <section class="section" id="features">
+      <div class="container is-max-desktop">
+        <div class="has-text-centered">
+          <h2 class="title is-3">Core Research Directions</h2>
         </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+        <div class="columns is-multiline feature-grid">
+          <div class="column is-6-tablet is-4-desktop">
+            <div class="info-card">
+              <span class="info-icon"><i class="fas fa-grin-stars"></i></span>
+              <h3>拟人化表情生成</h3>
+              <p>研究眉眼口鼻等关键部位的协同控制，实现更自然、更细腻的人脸表情表达。</p>
+            </div>
+          </div>
+          <div class="column is-6-tablet is-4-desktop">
+            <div class="info-card">
+              <span class="info-icon"><i class="fas fa-microphone-alt"></i></span>
+              <h3>语音与多模态交互</h3>
+              <p>融合语音、视觉与动作控制，让机器人具备问答、引导与互动反馈能力。</p>
+            </div>
+          </div>
+          <div class="column is-6-tablet is-4-desktop">
+            <div class="info-card">
+              <span class="info-icon"><i class="fas fa-cogs"></i></span>
+              <h3>机构与驱动设计</h3>
+              <p>探索紧凑、高可靠和可维护的头面部结构设计与执行机构方案。</p>
+            </div>
+          </div>
+          <div class="column is-6-tablet is-4-desktop">
+            <div class="info-card">
+              <span class="info-icon"><i class="fas fa-brain"></i></span>
+              <h3>情感计算与社交交互</h3>
+              <p>关注表情、语义与行为的一致性，提升机器人在社交互动中的亲和力与可信度。</p>
+            </div>
+          </div>
+          <div class="column is-6-tablet is-4-desktop">
+            <div class="info-card">
+              <span class="info-icon"><i class="fas fa-laptop-code"></i></span>
+              <h3>系统集成平台</h3>
+              <p>连接机械、控制、感知与智能算法模块，形成可复用、可迭代的研究平台。</p>
+            </div>
+          </div>
+          <div class="column is-6-tablet is-4-desktop">
+            <div class="info-card">
+              <span class="info-icon"><i class="fas fa-hospital-user"></i></span>
+              <h3>场景化应用落地</h3>
+              <p>面向导览、教育、康养和服务接待等场景，推动机器人从实验室走向真实应用。</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
+    </section>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+    <section class="section hero is-light" id="robots">
+      <div class="container is-max-desktop">
+        <div class="has-text-centered">
+          <h2 class="title is-3">Four Generations of Humanoid Face Robots</h2>
+          <p class="section-intro">建议把这里作为页面主叙事：用“版本演进”串起你们的技术发展路径。</p>
+        </div>
+        <div class="columns is-multiline robot-grid">
+          <div class="column is-6">
+            <div class="robot-card">
+              <img src="static/images/carousel1.jpg" alt="Version 1 Humanoid Face Robot" loading="lazy">
+              <div class="robot-card-content">
+                <span class="robot-badge">Version 1</span>
+                <h3>初代原型验证平台</h3>
+                <p>适合展示你们最早的人面机器人原型，突出基础结构设计、驱动思路和核心表情验证结果。</p>
+                <ul>
+                  <li>关键词：原型验证、基础驱动、关键部件设计</li>
+                  <li>建议突出：第一版解决了什么“从 0 到 1”的问题</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="column is-6">
+            <div class="robot-card">
+              <img src="static/images/carousel2.jpg" alt="Version 2 Humanoid Face Robot" loading="lazy">
+              <div class="robot-card-content">
+                <span class="robot-badge">Version 2</span>
+                <h3>结构优化与表情增强</h3>
+                <p>建议在这里说明第二代相对第一代的升级点，例如自由度提升、稳定性改善和表情丰富度增强。</p>
+                <ul>
+                  <li>关键词：结构升级、精度控制、表情自然度</li>
+                  <li>建议突出：相比上一代具体改进了哪些能力</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="column is-6">
+            <div class="robot-card">
+              <img src="static/images/carousel3.jpg" alt="Version 3 Humanoid Face Robot" loading="lazy">
+              <div class="robot-card-content">
+                <span class="robot-badge">Version 3</span>
+                <h3>多模态交互平台</h3>
+                <p>第三代建议强调语音、视觉、表情的协同，让访问者看到机器人从“能动”发展到“能交流”。</p>
+                <ul>
+                  <li>关键词：语音交互、视觉感知、协同控制</li>
+                  <li>建议突出：如何实现更自然的人机互动体验</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="column is-6">
+            <div class="robot-card">
+              <img src="static/images/carousel4.jpg" alt="Version 4 Humanoid Face Robot" loading="lazy">
+              <div class="robot-card-content">
+                <span class="robot-badge">Version 4</span>
+                <h3>面向应用的系统化版本</h3>
+                <p>第四代建议作为当前主打平台，重点展示整体完成度、稳定运行能力以及真实场景中的部署效果。</p>
+                <ul>
+                  <li>关键词：系统集成、场景部署、服务应用</li>
+                  <li>建议突出：这是否是当前最成熟、最具代表性的版本</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- End of Statcounter Code -->
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title is-3">Robot Gallery Carousel</h2>
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item">
+              <img src="static/images/carousel1.jpg" alt="Robot generation 1" loading="lazy"/>
+              <h2 class="subtitle has-text-centered">第一代机器人：验证基础头面部机构与表情驱动思路。</h2>
+            </div>
+            <div class="item">
+              <img src="static/images/carousel2.jpg" alt="Robot generation 2" loading="lazy"/>
+              <h2 class="subtitle has-text-centered">第二代机器人：提升结构稳定性与面部动作精度。</h2>
+            </div>
+            <div class="item">
+              <img src="static/images/carousel3.jpg" alt="Robot generation 3" loading="lazy"/>
+              <h2 class="subtitle has-text-centered">第三代机器人：引入语音与感知模块，强化交互体验。</h2>
+            </div>
+            <div class="item">
+              <img src="static/images/carousel4.jpg" alt="Robot generation 4" loading="lazy"/>
+              <h2 class="subtitle has-text-centered">第四代机器人：聚焦系统集成与真实应用场景落地。</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  </body>
-  </html>
+    <section class="hero is-small is-light" id="demos">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title is-3">Featured Demo</h2>
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <p class="section-intro">这里适合放实验室总介绍视频，或者直接放第四代机器人最完整的一条展示视频。</p>
+              <div class="publication-video">
+                <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" title="Featured lab demo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title is-3">Generation Demo Videos</h2>
+          <p class="section-intro has-text-centered">建议每一代至少保留 1 个最具代表性的 demo，形成清晰的版本演进故事线。</p>
+          <div id="video-carousel" class="carousel results-carousel">
+            <div class="item item-video1">
+              <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
+                <source src="static/videos/carousel1.mp4" type="video/mp4">
+              </video>
+              <h2 class="subtitle has-text-centered">Version 1 Demo：基础表情动作与机构原型验证。</h2>
+            </div>
+            <div class="item item-video2">
+              <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
+                <source src="static/videos/carousel2.mp4" type="video/mp4">
+              </video>
+              <h2 class="subtitle has-text-centered">Version 2 Demo：面部动作更流畅、控制更稳定。</h2>
+            </div>
+            <div class="item item-video3">
+              <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+                <source src="static/videos/carousel3.mp4" type="video/mp4">
+              </video>
+              <h2 class="subtitle has-text-centered">Version 3/4 Demo：语音交互与应用场景展示。</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero is-light" id="applications">
+      <div class="container is-max-desktop">
+        <div class="has-text-centered">
+          <h2 class="title is-3">Application Scenarios</h2>
+        </div>
+        <div class="columns is-multiline feature-grid">
+          <div class="column is-6-tablet is-3-desktop">
+            <div class="info-card compact">
+              <span class="info-icon"><i class="fas fa-map-signs"></i></span>
+              <h3>展厅导览</h3>
+              <p>作为具有人脸表情与语音交互能力的智能讲解终端。</p>
+            </div>
+          </div>
+          <div class="column is-6-tablet is-3-desktop">
+            <div class="info-card compact">
+              <span class="info-icon"><i class="fas fa-chalkboard-teacher"></i></span>
+              <h3>教育互动</h3>
+              <p>用于课堂互动、科研科普与青少年机器人教育展示。</p>
+            </div>
+          </div>
+          <div class="column is-6-tablet is-3-desktop">
+            <div class="info-card compact">
+              <span class="info-icon"><i class="fas fa-heart"></i></span>
+              <h3>康养陪伴</h3>
+              <p>在康复、养老与情感陪伴场景中提供更自然的人机交流方式。</p>
+            </div>
+          </div>
+          <div class="column is-6-tablet is-3-desktop">
+            <div class="info-card compact">
+              <span class="info-icon"><i class="fas fa-concierge-bell"></i></span>
+              <h3>服务接待</h3>
+              <p>面向前台、咨询台或展会环境的智能服务型机器人演示与部署。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title">System Poster / Architecture</h2>
+          <p class="section-intro has-text-centered">原模板中的 Poster 区更适合改成实验室海报、机器人系统架构图或年度进展图。</p>
+          <iframe src="static/pdfs/sample.pdf" width="100%" height="550" title="Lab poster"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="publications">
+      <div class="container is-max-desktop content">
+        <div class="has-text-centered">
+          <h2 class="title is-3">Representative Outputs</h2>
+          <p class="section-intro">如果你们有论文、项目、专利或开源仓库，建议集中放在这里，方便访问者快速了解实验室产出。</p>
+        </div>
+        <div class="outputs-list">
+          <div class="output-item">
+            <h3>论文 / Project 01</h3>
+            <p>在这里填写代表性论文标题、会议期刊信息，或者某个机器人项目的简要介绍。</p>
+          </div>
+          <div class="output-item">
+            <h3>论文 / Project 02</h3>
+            <p>可以补充一条与表情控制、交互系统或机构设计相关的成果说明。</p>
+          </div>
+          <div class="output-item">
+            <h3>合作与联系</h3>
+            <p>邮箱：your-lab@email.com<br>地址：Your University, Your School, Your City</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                This page is adapted from the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> and reorganized for a humanoid face robot laboratory homepage. <br>
+                你可以继续把当前占位文字替换为实验室真实名称、四代机器人型号、视频介绍、论文与联系方式，让页面成为一个完整的实验室展示站点。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
