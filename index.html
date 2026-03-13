@@ -1,520 +1,584 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+
+  <meta name="title" content="人面机器人｜鹏睿机器人项目展示页">
+  <meta name="description" content="广东省智能感知与计算重点实验室人面机器人项目展示页，介绍鹏睿机器人项目目标、四代版本演进、机器人设计与表情模仿 demo。">
+  <meta name="keywords" content="人面机器人, 鹏睿机器人, 机器人设计, 表情模仿, 人机交互, 广东省智能感知与计算重点实验室">
+  <meta name="author" content="广东省智能感知与计算重点实验室">
   <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
+  <meta name="language" content="Chinese">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="广东省智能感知与计算重点实验室">
+  <meta property="og:title" content="人面机器人｜鹏睿机器人项目展示页">
+  <meta property="og:description" content="聚焦机器人设计、表情模仿与多版本迭代的人面机器人项目展示页。">
+  <meta property="og:url" content="https://YOUR_DOMAIN.com/pengruirobot">
   <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="og:image:alt" content="人面机器人项目预览图">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
+  <meta name="twitter:title" content="人面机器人｜鹏睿机器人项目展示页">
+  <meta name="twitter:description" content="介绍鹏睿机器人项目目标、版本演进与表情模仿 demo。">
   <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
 
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
   <meta name="msapplication-TileColor" content="#2563eb">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
+  <title>人面机器人｜鹏睿机器人</title>
 
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
+
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
+
   <noscript>
     <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="static/css/bulma-slider.min.css">
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
-  
-  <!-- Fonts - Optimized loading -->
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
+
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
-    "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
-    ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
+    "@type": "ResearchProject",
+    "name": "人面机器人",
+    "alternateName": "鹏睿机器人",
+    "description": "聚焦机器人设计、表情模仿与多版本迭代的人面机器人项目。",
+    "url": "https://YOUR_DOMAIN.com/pengruirobot",
     "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
+    "keywords": ["人面机器人", "鹏睿机器人", "机器人设计", "表情模仿"],
+    "provider": {
+      "@type": "Organization",
+      "name": "广东省智能感知与计算重点实验室"
+    }
   }
   </script>
 </head>
 <body>
 
-
-  <!-- Scroll to Top Button -->
-  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+  <button class="scroll-to-top" onclick="scrollToTop()" title="返回顶部" aria-label="返回顶部">
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
   <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
+    <button class="more-works-btn" onclick="toggleMoreWorks()" title="查看实验室相关成果">
       <i class="fas fa-flask"></i>
-      More Works
+      实验室相关成果
       <i class="fas fa-chevron-down dropdown-arrow"></i>
     </button>
     <div class="more-works-dropdown" id="moreWorksDropdown">
       <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
+        <h4>实验室相关成果</h4>
+        <button class="close-btn" onclick="toggleMoreWorks()" aria-label="关闭">
           <i class="fas fa-times"></i>
         </button>
       </div>
       <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
+        <a href="#versions" class="work-item">
           <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
+            <h5>鹏睿机器人四代演进</h5>
+            <p>从原型探索到系统完善，梳理鹏睿 v1 至 v4 的发展脉络。</p>
+            <span class="work-venue">项目主线内容</span>
           </div>
-          <i class="fas fa-external-link-alt"></i>
+          <i class="fas fa-arrow-right"></i>
         </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
+        <a href="#design-highlights" class="work-item">
           <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
+            <h5>设计与表情模仿亮点</h5>
+            <p>聚焦机器人外观设计、细节结构与表情模仿能力展示。</p>
+            <span class="work-venue">重点 demo 方向</span>
           </div>
-          <i class="fas fa-external-link-alt"></i>
+          <i class="fas fa-arrow-right"></i>
         </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
+        <a href="#project-info" class="work-item">
           <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
+            <h5>项目与团队信息</h5>
+            <p>展示项目定位、阶段目标、内容补充说明与团队信息。</p>
+            <span class="work-venue">对外展示信息</span>
           </div>
-          <i class="fas fa-external-link-alt"></i>
+          <i class="fas fa-arrow-right"></i>
         </a>
       </div>
     </div>
   </div>
 
   <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+    <section class="hero project-hero publication-header">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-vcentered is-variable is-6">
+            <div class="column is-6-desktop has-text-left-desktop has-text-centered-tablet">
+              <span class="hero-eyebrow">广东省智能感知与计算重点实验室</span>
+              <h1 class="title is-1 publication-title">人面机器人</h1>
+              <p class="hero-subtitle">鹏睿机器人：面向自然交互与表情表达的人面机器人平台</p>
+              <p class="hero-description">
+                本项目聚焦机器人设计、表情模仿与多版本持续迭代，围绕拟人化外观、面部表达效果与展示能力，逐步形成鹏睿机器人系列平台。
+              </p>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+              <div class="hero-meta-grid">
+                <div class="meta-card">
+                  <span class="meta-label">机器人名称</span>
+                  <strong>鹏睿机器人</strong>
+                </div>
+                <div class="meta-card">
+                  <span class="meta-label">当前展示</span>
+                  <strong>鹏睿 v1 · v2 · v3 · v4</strong>
+                </div>
+              </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
+              <div class="publication-links hero-actions">
+                <span class="link-block">
+                  <a href="#vision" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-bullseye"></i></span>
+                    <span>项目目标</span>
                   </a>
                 </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                  <a href="#versions" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-layer-group"></i></span>
+                    <span>版本演进</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="#demo-sections" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-video"></i></span>
+                    <span>Demo 展示</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="#project-info" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-address-card"></i></span>
+                    <span>项目信息</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+
+            <div class="column is-6-desktop">
+              <div class="publication-banner">
+                <video poster="" autoplay controls muted loop preload="metadata">
+                  <source src="static/videos/banner_video.mp4" type="video/mp4">
+                </video>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <section class="section teaser quick-summary-section">
+      <div class="container is-max-desktop">
+        <div class="quick-summary">
+          <div class="summary-card">
+            <i class="fas fa-robot"></i>
+            <h3>项目定位</h3>
+            <p>围绕人面机器人设计、表情表达与对外展示进行持续研发。</p>
+          </div>
+          <div class="summary-card">
+            <i class="fas fa-smile"></i>
+            <h3>重点方向</h3>
+            <p>突出机器人设计展示、表情模仿 demo 与多版本差异化演示。</p>
+          </div>
+          <div class="summary-card">
+            <i class="fas fa-code-branch"></i>
+            <h3>演进路线</h3>
+            <p>以鹏睿 v1、v2、v3、v4 为主线，清晰梳理每一代的改进重点。</p>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
+    </section>
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
+    <section class="section hero is-light" id="vision">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">项目目标</h2>
+            <div class="content has-text-justified">
+              <p>
+                人面机器人是面向自然人机交互的重要研究方向。相比传统机器人，其在亲和力、视觉表达与沟通自然度方面具有更大的潜力。鹏睿机器人项目聚焦于拟人化外观设计、面部表情表达与多版本迭代验证，希望构建一个能够持续演进、便于展示和扩展的人面机器人平台。
+              </p>
+              <p>
+                当前网页重点展示机器人设计、表情模仿和版本演进过程。页面中的部分位置已为后续内容补充预留，可在整理完成每代机器人的突出改进点、代表性 demo 与版本说明后继续替换完善。
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
+    </section>
 
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+    <section class="section" id="overview">
+      <div class="container is-max-desktop">
+        <div class="columns is-vcentered is-variable is-6">
+          <div class="column is-6-desktop">
+            <h2 class="title is-3 has-text-left">鹏睿机器人简介</h2>
+            <div class="content has-text-justified">
+              <p>
+                鹏睿机器人是广东省智能感知与计算重点实验室持续研发的人面机器人平台。项目通过多代版本迭代，在机器人外观、面部结构、表情呈现和展示组织方式上不断探索与完善。
+              </p>
+              <p>
+                当前项目已形成鹏睿 v1、鹏睿 v2、鹏睿 v3、鹏睿 v4 四个阶段版本。每一代既保留清晰的阶段目标，又允许展示数量不同、内容侧重点不同的 demo，适合后续逐步补充项目材料。
+              </p>
+            </div>
+            <div class="feature-chip-group">
+              <span class="feature-chip">拟人化外观设计</span>
+              <span class="feature-chip">表情模仿能力</span>
+              <span class="feature-chip">多版本持续迭代</span>
+              <span class="feature-chip">项目展示友好</span>
+            </div>
+          </div>
+          <div class="column is-6-desktop">
+            <div id="overview-carousel" class="carousel results-carousel">
+              <div class="item">
+                <img src="static/images/carousel1.jpg" alt="鹏睿机器人整体外观展示" loading="lazy">
+                <h2 class="subtitle has-text-centered">机器人整体外观展示，可替换为代表性的整机照片。</h2>
+              </div>
+              <div class="item">
+                <img src="static/images/carousel2.jpg" alt="鹏睿机器人面部细节展示" loading="lazy">
+                <h2 class="subtitle has-text-centered">面部细节或关键结构展示，可体现设计特点。</h2>
+              </div>
+              <div class="item">
+                <img src="static/images/carousel3.jpg" alt="鹏睿机器人表情展示" loading="lazy">
+                <h2 class="subtitle has-text-centered">表情模仿或动作过程展示，突出核心能力。</h2>
+              </div>
+              <div class="item">
+                <img src="static/images/carousel4.jpg" alt="鹏睿机器人场景展示" loading="lazy">
+                <h2 class="subtitle has-text-centered">场景化展示图片，可用于讲解、互动或展厅环境。</h2>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
+    </section>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+    <section class="section hero is-light" id="versions">
+      <div class="container is-max-desktop">
+        <div class="has-text-centered section-heading">
+          <h2 class="title is-3">鹏睿机器人四代演进</h2>
+          <p class="section-lead">先建立版本脉络，再逐一展示不同版本的 demo 内容。每代的突出改进点都已预留位置，便于你后续逐步填写。</p>
+        </div>
 
-    <!-- End of Statcounter Code -->
+        <div class="version-grid">
+          <article class="version-card">
+            <div class="version-card-header">
+              <span class="version-badge">Version 01</span>
+              <h3>鹏睿 v1</h3>
+              <p class="version-tagline">原型探索 / 初代验证</p>
+            </div>
+            <p>鹏睿 v1 作为项目的初始版本，主要承担原型探索与基础能力验证任务。</p>
+            <ul>
+              <li>突出改进点：<strong>【待补充】</strong></li>
+              <li>核心展示内容：<strong>【待补充】</strong></li>
+              <li>代表性 demo：<strong>【待补充】</strong></li>
+            </ul>
+            <a href="#demo-v1" class="version-link">查看 v1 Demo <i class="fas fa-arrow-right"></i></a>
+          </article>
 
-  </body>
-  </html>
+          <article class="version-card">
+            <div class="version-card-header">
+              <span class="version-badge">Version 02</span>
+              <h3>鹏睿 v2</h3>
+              <p class="version-tagline">结构优化 / 表现提升</p>
+            </div>
+            <p>鹏睿 v2 在前一代基础上继续改进，可重点突出结构优化与展示效果提升。</p>
+            <ul>
+              <li>突出改进点：<strong>【待补充】</strong></li>
+              <li>核心展示内容：<strong>【待补充】</strong></li>
+              <li>代表性 demo：<strong>【待补充】</strong></li>
+            </ul>
+            <a href="#demo-v2" class="version-link">查看 v2 Demo <i class="fas fa-arrow-right"></i></a>
+          </article>
+
+          <article class="version-card">
+            <div class="version-card-header">
+              <span class="version-badge">Version 03</span>
+              <h3>鹏睿 v3</h3>
+              <p class="version-tagline">能力增强 / 表情升级</p>
+            </div>
+            <p>鹏睿 v3 可用于强调更进一步的面部表达、动作协调与演示完整性。</p>
+            <ul>
+              <li>突出改进点：<strong>【待补充】</strong></li>
+              <li>核心展示内容：<strong>【待补充】</strong></li>
+              <li>代表性 demo：<strong>【待补充】</strong></li>
+            </ul>
+            <a href="#demo-v3" class="version-link">查看 v3 Demo <i class="fas fa-arrow-right"></i></a>
+          </article>
+
+          <article class="version-card featured-version">
+            <div class="version-card-header">
+              <span class="version-badge">Version 04</span>
+              <h3>鹏睿 v4</h3>
+              <p class="version-tagline">系统完善 / 当前重点展示版本</p>
+            </div>
+            <p>鹏睿 v4 可作为当前阶段重点展示版本，适合放置更成熟、更完整的综合 demo。</p>
+            <ul>
+              <li>突出改进点：<strong>【待补充】</strong></li>
+              <li>核心展示内容：<strong>【待补充】</strong></li>
+              <li>代表性 demo：<strong>【待补充】</strong></li>
+            </ul>
+            <a href="#demo-v4" class="version-link">查看 v4 Demo <i class="fas fa-arrow-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="demo-sections">
+      <div class="container is-max-desktop">
+        <div class="has-text-centered section-heading">
+          <h2 class="title is-3">分版本 Demo 展示</h2>
+          <p class="section-lead">这里采用弹性网格布局，每个版本的 demo 数量可以不同，后续可按真实材料自由增减视频或图片卡片。</p>
+        </div>
+
+        <div class="demo-version-section" id="demo-v1">
+          <div class="demo-section-header">
+            <div>
+              <h3>鹏睿 v1 Demo</h3>
+              <p>适合展示初代原型的设计探索、基础动作与早期表情效果。</p>
+            </div>
+            <span class="demo-note">数量可增减</span>
+          </div>
+          <div class="demo-grid cols-2">
+            <article class="demo-card">
+              <video controls muted loop preload="metadata">
+                <source src="static/videos/carousel1.mp4" type="video/mp4">
+              </video>
+              <h4>Demo 01：整体设计展示</h4>
+              <p>用于展示鹏睿 v1 的整体外观或结构布局，可替换为你们的真实视频说明。</p>
+            </article>
+            <article class="demo-card">
+              <video controls muted loop preload="metadata">
+                <source src="static/videos/carousel2.mp4" type="video/mp4">
+              </video>
+              <h4>Demo 02：基础表情 / 基础动作</h4>
+              <p>用于展示 v1 初步实现的表情动作、局部结构运动或测试效果。</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="demo-version-section" id="demo-v2">
+          <div class="demo-section-header">
+            <div>
+              <h3>鹏睿 v2 Demo</h3>
+              <p>适合展示结构优化后的效果，可增加设计改进、表情模仿和局部动作细节等内容。</p>
+            </div>
+            <span class="demo-note">支持 2~4 个以上 demo</span>
+          </div>
+          <div class="demo-grid cols-3">
+            <article class="demo-card">
+              <img src="static/images/carousel2.jpg" alt="鹏睿 v2 设计优化展示" loading="lazy">
+              <h4>Demo 01：设计优化展示</h4>
+              <p>可放结构优化、面部外观改善或关键组件更新前后的展示内容。</p>
+            </article>
+            <article class="demo-card">
+              <video controls muted loop preload="metadata">
+                <source src="static/videos/carousel2.mp4" type="video/mp4">
+              </video>
+              <h4>Demo 02：表情模仿展示</h4>
+              <p>可用于体现 v2 在表情丰富度或面部动作协调性方面的提升。</p>
+            </article>
+            <article class="demo-card">
+              <video controls muted loop preload="metadata">
+                <source src="static/videos/carousel3.mp4" type="video/mp4">
+              </video>
+              <h4>Demo 03：局部动作展示</h4>
+              <p>适合展示嘴部、眼部或其他局部动作细节。若有更多内容可继续新增卡片。</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="demo-version-section" id="demo-v3">
+          <div class="demo-section-header">
+            <div>
+              <h3>鹏睿 v3 Demo</h3>
+              <p>适合突出更自然的面部表达、动作连续性以及更完整的展示逻辑。</p>
+            </div>
+            <span class="demo-note">可侧重表情模仿</span>
+          </div>
+          <div class="demo-grid cols-3">
+            <article class="demo-card">
+              <video controls muted loop preload="metadata">
+                <source src="static/videos/carousel1.mp4" type="video/mp4">
+              </video>
+              <h4>Demo 01：连续表情展示</h4>
+              <p>建议替换为能够体现连续动作或表情转换效果的视频。</p>
+            </article>
+            <article class="demo-card">
+              <img src="static/images/carousel3.jpg" alt="鹏睿 v3 表情模仿细节" loading="lazy">
+              <h4>Demo 02：表情模仿细节</h4>
+              <p>可展示关键帧对比图、表情模仿结果截图或设计细节。</p>
+            </article>
+            <article class="demo-card placeholder-card">
+              <div class="placeholder-content">
+                <i class="fas fa-plus-circle"></i>
+                <h4>预留更多 Demo</h4>
+                <p>此处可继续添加 v3 的更多视频或图片卡片，例如表情对比、动作协调、展示场景等。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="demo-version-section featured-demo-section" id="demo-v4">
+          <div class="demo-section-header">
+            <div>
+              <h3>鹏睿 v4 Demo</h3>
+              <p>当前重点展示版本，适合集中呈现最成熟的设计效果、表情模仿效果与综合展示能力。</p>
+            </div>
+            <span class="demo-note">建议作为页面重点</span>
+          </div>
+          <div class="demo-grid cols-2 large-cards">
+            <article class="demo-card emphasis-card">
+              <video controls muted loop preload="metadata">
+                <source src="static/videos/banner_video.mp4" type="video/mp4">
+              </video>
+              <h4>重点 Demo：综合展示视频</h4>
+              <p>建议放置当前最能代表项目水平的一段视频，例如综合设计、表情模仿和演示效果的合集。</p>
+            </article>
+            <article class="demo-card emphasis-card">
+              <video controls muted loop preload="metadata">
+                <source src="static/videos/carousel3.mp4" type="video/mp4">
+              </video>
+              <h4>重点 Demo：高级表情模仿</h4>
+              <p>建议放置最成熟的表情模仿或交互效果视频，体现当前阶段的代表性成果。</p>
+            </article>
+            <article class="demo-card">
+              <img src="static/images/carousel4.jpg" alt="鹏睿 v4 应用展示" loading="lazy">
+              <h4>补充展示：场景化内容</h4>
+              <p>可替换为应用场景图、展台展示照片或项目说明图。</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero is-light" id="design-highlights">
+      <div class="container is-max-desktop">
+        <div class="has-text-centered section-heading">
+          <h2 class="title is-3">设计与表情模仿亮点</h2>
+          <p class="section-lead">专门为你们当前最想强调的内容预留展示区域，便于放置设计亮点与表情模仿效果说明。</p>
+        </div>
+
+        <div class="highlight-grid">
+          <article class="highlight-card">
+            <div class="highlight-icon"><i class="fas fa-drafting-compass"></i></div>
+            <h3>机器人设计展示</h3>
+            <p>可介绍整体造型设计、面部外观、关键结构设计或某一代版本的重要造型变化。</p>
+            <ul>
+              <li>设计理念：<strong>【待补充】</strong></li>
+              <li>关键结构：<strong>【待补充】</strong></li>
+              <li>展示重点：<strong>【待补充】</strong></li>
+            </ul>
+          </article>
+          <article class="highlight-card">
+            <div class="highlight-icon"><i class="fas fa-theater-masks"></i></div>
+            <h3>表情模仿展示</h3>
+            <p>可介绍机器人对典型表情的模仿效果，或放置不同版本之间的表情表现对比。</p>
+            <ul>
+              <li>重点表情：<strong>【待补充】</strong></li>
+              <li>模仿方式：<strong>【待补充】</strong></li>
+              <li>展示材料：<strong>【待补充】</strong></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="future">
+      <div class="container is-max-desktop">
+        <div class="has-text-centered section-heading">
+          <h2 class="title is-3">应用前景与未来方向</h2>
+          <p class="section-lead">这一部分可帮助访客理解项目价值，也方便后续扩展成更完整的展示页。</p>
+        </div>
+
+        <div class="scenario-grid">
+          <article class="scenario-card">
+            <h3>展示讲解</h3>
+            <p>适用于展厅、实验室展示与机器人系统介绍等场景。</p>
+          </article>
+          <article class="scenario-card">
+            <h3>人机交互体验</h3>
+            <p>适合围绕表情表达、互动展示与观众体验设计 demo。</p>
+          </article>
+          <article class="scenario-card">
+            <h3>教育科研平台</h3>
+            <p>可作为持续迭代的人面机器人研究平台，支持结构、控制与展示研究。</p>
+          </article>
+          <article class="scenario-card">
+            <h3>未来扩展</h3>
+            <p>后续可继续加入更丰富的表情、动作控制与场景化展示能力。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero is-light" id="project-info">
+      <div class="container is-max-desktop content">
+        <div class="bibtex-header">
+          <h2 class="title">项目与团队信息</h2>
+          <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="复制项目信息">
+            <i class="fas fa-copy"></i>
+            <span class="copy-text">Copy</span>
+          </button>
+        </div>
+        <pre id="bibtex-code"><code>项目名称：人面机器人
+机器人名称：鹏睿机器人
+实验室：广东省智能感知与计算重点实验室
+
+版本规划：
+- 鹏睿 v1：突出改进点【待补充】
+- 鹏睿 v2：突出改进点【待补充】
+- 鹏睿 v3：突出改进点【待补充】
+- 鹏睿 v4：突出改进点【待补充】
+
+展示重点：
+- 机器人设计
+- 表情模仿
+- 分版本 demo 展示
+
+备注：
+当前网页已按“不同版本 demo 数量可不同”的方式组织，可继续按项目进展补充图片、视频与版本说明。</code></pre>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                本页面基于 <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> 改造，已重新组织为适合机器人项目展示的结构。
+                当前版本重点用于展示鹏睿机器人项目目标、四代演进与分版本 demo 内容，后续可继续补充各版本改进点、更多视频和真实图片材料。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+</body>
+</html>
